@@ -1,0 +1,30 @@
+
+
+.image-design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    height: 400px;
+    width: 600px;
+    margin-top: 200px;
+}
+
+@media (max-width: 768px) {
+    
+    .image-design{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        height: 500px;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .usercard-design{
+        width: 95%;
+        padding: 10px; 
+    }
+   
+  }

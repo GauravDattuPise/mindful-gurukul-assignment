@@ -1,0 +1,53 @@
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #ccc;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .form-title {
+    font-size: 35px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-field {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .cityAndState{
+    margin-top: 40px;
+  }
+  
+  .submit-button {
+    margin-top: 50px;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  .readio-design{
+    line-height: 5px;
+    font: red;
+  }
+
+.error-message{
+    color : red;
+    margin-top: 1px;
+}  
+  /* making responsive */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+    .form-title {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  

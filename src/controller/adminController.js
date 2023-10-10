@@ -1,7 +1,7 @@
 
 const bcrypt = require("bcrypt");
 
-// user registration
+// admin registration
 
 const adminModel = require("../model/adminModel");
 const { validateName, validateEmail } = require("../validation/validator");
@@ -72,12 +72,12 @@ const register = async (req,res) =>{
             return res.status(200).send({status : false, message : "Phone already registerd"});
         }
 
-        // saving user details to database
+        // saving admin details to database
         const savedAdmin = await adminModel.create(adminData);
         return res.status(201).send({status : true, message : "Registration Successfull", savedAdmin})
     }
     catch(error){
-        res.status(500).send({status : false, error : "error in register user", error})
+        res.status(500).send({status : false, error : "error in register admin", error})
     }
 }
 
@@ -93,12 +93,12 @@ const login = async (req,res) =>{
         const data = req.body;
         const {email, password} = data;
 
-        // user validation
+        // admin validation
         if( !email || !password){
             return res.status(400).send({status : false, message : "email and password is required"})
         }
 
-        // checking user exist or not
+        // checking admin exist or not
         const existingAdmin = await adminModel.findOne({email});
         if(!existingAdmin){
             return res.status(200).send({status : false, message : "Email is not found"});

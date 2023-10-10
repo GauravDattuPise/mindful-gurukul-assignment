@@ -16,7 +16,6 @@ const Login = () => {
 
     const navigate = useNavigate();
 
-    // const dispatch = useDispatch();
     const [showPassword, setShowPassword] = useState(false);
 
     // state for inputs

@@ -7,7 +7,7 @@ import "./getUser.css"
 
 const GetUser = () => {
 
-  // state for blogs
+  // state for users
   const [users, setusers] = useState([]);
 
   // getting adminId from localstorage

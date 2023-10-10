@@ -5,13 +5,7 @@ This application allows admin to sign up, log in, and perform basic CRUD operati
 
 ## 1. Signup Screen
 
-- admin can sign up with the following information:
-  - Name: Textbox (Alphabets only)
-  - Email: Textbox (Alphanumeric only)
-  - Phone: Textbox (Numbers only)
-  - Gender: Radio buttons (Male, Female, Others)
-  - How did you hear about this?: Checkbox options (LinkedIn, Friends, Job Portal, Others)
-  - City: Dropdown with static values (Mumbai, Pune, Ahmedabad)
+- admin can sign up with his details
 - Save button to submit the signup data.
 
 ## 2. Login
